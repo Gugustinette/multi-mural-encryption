@@ -1,11 +1,14 @@
 # multi-mural-encryption
 	Explanation :
+	
 		Takes a string and return an encrypted one with its key
 		Output is written on terminal and stored in a text file named "encrypt.txt"
+		
 		Basics :
 		Multi-Mural Encryption (MM Encryption) is based on 2 concepts :
 			- Number of Wall
 			- Strength
+			
 		Number of wall :
 			A wall is just a method of encryption, that allready exists
 			First wall is wall A, second is wall B,...
@@ -18,6 +21,7 @@
 					ADCBE3112547225
 					First 5 characters are the order of the walls,
 					All others number are values for each walls, in the same order
+					
 		Strenght (not coded yet):
 			The second concept is what makes MM Encryption powerfull
 			Basic encryption method can't be used many times 'cause it would just loop
@@ -30,7 +34,9 @@
 			In this example, the force is 1.
 
 	Key :
+	
 		The key is of form :
+		
 			ABCDE ax + a_value + bx + b_value +...
 			ABCDE correspond to the order of the wall, could be BCDAE, ACEDB,...
 			a_value is the number which has been used to apply wall A
@@ -40,6 +46,7 @@
 			ax is called a "Len Value"
 			Then :
 				Key = Wall Order + Len Value 1 + Wall Value 1 + Len Value 2 + Wall Value 2 +...
+				
 		In this example, a_value is always between 1 and 9 so there no need of ax
 		You can then personnalize the encryption, by adding other possibilities
 		Here the wall C also output a value called "max_char_binary"
@@ -50,6 +57,7 @@
 		bigger than 9 bits
 
 	Decrypting :
+	
 		Decrypting the message is fairly easy once you understand MM Encryption concept
 		All you have to do is reversing the whole process :
 			- Read the wall order part of the key upside down
