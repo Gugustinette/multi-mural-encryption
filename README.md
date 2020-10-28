@@ -12,7 +12,7 @@
 		Number of wall :
 			A wall is just a method of encryption, that allready exists
 			First wall is wall A, second is wall B,...
-			On this example, wall A is a basic Ceaser Cypher in Ascii, with a key from 1 to 9
+			On this example, wall A is a basic Ceaser Cypher in Ascii, with a key from -9 to 9
 			It'll just shift every character in a list, by 1 to 9, on the Ascii table
 			The more wall you have, the more MM Encryption is powerfull
 			The basic operation of MM Encryption is applying every wall in a random order with random values
