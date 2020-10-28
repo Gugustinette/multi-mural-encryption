@@ -13,7 +13,7 @@
 			A wall is just a method of encryption, that allready exists
 			First wall is wall A, second is wall B,...
 			On this example, wall A is a basic Ceaser Cypher in Ascii, with a key from -9 to 9
-			It'll just shift every character in a list, by 1 to 9, on the Ascii table
+			It'll just shift every character in a list, by -9 to 9, on the Ascii table
 			The more wall you have, the more MM Encryption is powerfull
 			The basic operation of MM Encryption is applying every wall in a random order with random values
 			Then the key is just the order of the walls, with every values for each one
@@ -47,7 +47,7 @@
 			Then :
 				Key = Wall Order + Len Value 1 + Wall Value 1 + Len Value 2 + Wall Value 2 +...
 				
-		In this example, a_value is always between 1 and 9 so there no need of ax
+		In this example, a_value is always between -9 and 9 so there no need of ax
 		You can then personnalize the encryption, by adding other possibilities
 		Here the wall C also output a value called "max_char_binary"
 		Wall C uses binary form of character, so this value is used to know what's the biggest binary number
