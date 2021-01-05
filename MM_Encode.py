@@ -106,18 +106,6 @@ def MM_Encrypt(message, force) :
 
         max_char_binary = 0
 
-        def BinaryToString(binary):  
-                
-            binary1 = binary  
-            decimal, i, n = 0, 0, 0
-            while(binary != 0):  
-                dec = binary % 10
-                decimal = decimal + dec * pow(2, i)  
-                binary = binary//10
-                i += 1
-            str_decimal = chr(decimal)
-            return (str_decimal)
-
         def ToMaxChar(str_nb, nb_char) : # Add one or many zero before a number to make it longer (return the number as a string)
             x = nb_char - len(str_nb)
             for i in range(x) :
