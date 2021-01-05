@@ -102,7 +102,7 @@ caraList = list(message)
 
 key = ''
 
-a_value = 0
+a_value = 1
 b_value = 0
 c_value = 0
 e_value = 0
